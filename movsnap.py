@@ -15,6 +15,9 @@ sub_file = sys.argv[1]
 # video file
 video_file = sys.argv[2]
 
+# n
+n = int(sys.argv[3])
+
 """
 11
 00:01:29,530 --> 00:01:32,124
