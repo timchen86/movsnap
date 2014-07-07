@@ -52,7 +52,7 @@ for time, time_x, sub in subs[start:end]:
     out_file = os.path.join(tmp_dir, "%s.png" % time_x) 
     out_file = pipes.quote(out_file)
 
-    ffmpeg_exe = "ffmpeg -y -ss %s -i %s -vframes 1 %s" % (time, (video_file), (out_file))
+    ffmpeg_exe = "ffmpeg -v 0 -y -ss %s -i %s -vframes 1 %s" % (time, (video_file), (out_file))
     print ffmpeg_exe
 
     try:
